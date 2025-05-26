@@ -10,18 +10,18 @@
     @endif
 
     @if (session()->has('success'))
-        <p class="alert alert-danger mt-2">{{ session()->get('success') }}</p>
+        <p class="dismissible alert-danger mt-2">{{ session()->get('success') }}</p>
     @endif
 
     @error('error')
-        <p class="alert alert-danger mt-2">{{ $message }}</p>
+        <p class="dismissible alert-danger mt-2">{{ $message }}</p>
     @enderror
 
     @if (session()->has('message'))
-        <p class="alert alert-danger mt-2 " role="alert">{{ session()->get('message') }}</p>
+        <p class="dismissible alert-danger mt-2 " role="alert">{{ session()->get('message') }}</p>
     @endif
 
-    <div class="flex p-4 my-4 mx-8 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 w-96 float-right alert"
+    <div class="flex p-4 my-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 w-96 fixed top-20 right-5 dismissible"
         role="alert">
         <svg class="shrink-0 inline w-4 h-4 me-3 mt-[2px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
             fill="currentColor" viewBox="0 0 20 20">

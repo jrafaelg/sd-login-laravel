@@ -19,23 +19,23 @@
         <p>This is a simple Laravel Blade template.</p>
 
         @can('post.view')
-            <p class="alert alert-success mt-2">You can view posts</p>
+            <p class="dismissible alert-success mt-2">You can view posts</p>
         @endcan
 
         @can('post.edit')
-            <p class="alert alert-success mt-2">You can edit posts</p>
+            <p class="dismissible alert-success mt-2">You can edit posts</p>
         @endcan
 
         @can('post.delete')
-            <p class="alert alert-success mt-2">You can delete posts</p>
+            <p class="dismissible alert-success mt-2">You can delete posts</p>
         @endcan
 
         @can('post.create')
-            <p class="alert alert-success mt-2">You can create posts</p>
+            <p class="dismissible alert-success mt-2">You can create posts</p>
         @endcan
 
         @can('employees.delete')
-            <p class="alert alert-success mt-2">You can delete employees</p>
+            <p class="dismissible alert-success mt-2">You can delete employees</p>
         @endcan
 
         <button class="bg-sky-50">test</button>
