@@ -114,6 +114,6 @@ class LoginController extends Controller
 
         //dd($request->all());
 
-        return redirect()->route('home')->with('success', 'Usuário cadastrado com sucesso');
+        return redirect()->route('login')->with('success', 'Usuário cadastrado com sucesso');
     }
 }
