@@ -62,7 +62,7 @@ class LoginController extends Controller
         if (!$autenticated) {
             return redirect()->route('login')->withErrors([
                 'error' => 'Email ou senha inválidos',
-            ]);
+            ])->withInput();
         }
 
 
